@@ -42,6 +42,15 @@ dependencies {
     implementation(libs.material)
     implementation(libs.androidx.activity)
     implementation(libs.androidx.constraintlayout)
+
+    //GoogleMapAPI
+    implementation(libs.places)
+    implementation(libs.play.services.maps)
+    implementation(libs.navigation)
+
+    //Github
+    implementation(libs.glide)
+
     testImplementation(libs.junit)
     androidTestImplementation(libs.androidx.junit)
     androidTestImplementation(libs.androidx.espresso.core)
