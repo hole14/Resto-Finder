@@ -1,4 +1,9 @@
 <resources>
     <string name="app_name">Resto Finder</string>
     <string name="search">Restoran…</string>
+    <string name="api_key">AIzaSyBKFdVC-UwhCuV6J9r0wmX3iCg1VCK3zDM</string>
+    <string name="nama_resto">Nama Resto</string>
+    <string name="jarak_rating">jarak | rating</string>
+    <string name="alamat">Alamat</string>
+    <string name="jam_buka">Jam Buka</string>
 </resources>

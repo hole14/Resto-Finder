@@ -29,9 +29,13 @@ android {
     compileOptions {
         sourceCompatibility = JavaVersion.VERSION_11
         targetCompatibility = JavaVersion.VERSION_11
+        isCoreLibraryDesugaringEnabled = true
     }
     kotlinOptions {
         jvmTarget = "11"
+    }
+    buildFeatures {
+        viewBinding = true
     }
 }
 
@@ -45,8 +49,14 @@ dependencies {
 
     //GoogleMapAPI
     implementation(libs.places)
+    implementation(libs.play.services.location)
+    coreLibraryDesugaring(libs.desugar.jdk.libs)
     implementation(libs.play.services.maps)
-    implementation(libs.navigation)
+
+    //livedata & viewmodel
+    implementation(libs.androidx.lifecycle.livedata.ktx)
+    implementation(libs.androidx.lifecycle.viewmodel.ktx)
+    implementation(libs.androidx.lifecycle.runtime.ktx)
 
     //Github
     implementation(libs.glide)
